@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
-@import "base/_reset.scss";
-@import "base/_button.scss";
+@import "base/_reset";
+@import "base/_button";
 
 @import "compornent/header";
 @import "compornent/footer";
+@import "compornent/compornent";
 
-@import "pages/page.scss";
-@import "pages/single.scss";
+@import "pages/page";
+@import "pages/single";
