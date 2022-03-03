@@ -1,44 +1,41 @@
 .toggle_btn {
-    display: block;
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
-    transition: all .5s;
-    cursor: pointer;
-    z-index: 3;
-  }
-  .toggle_btn span {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    background-color: #333;
-    border-radius: 4px;
-    transition: all .5s;
-  }
-  .toggle_btn span:nth-child(1) {
-    top: 4px;
-  }
-  .toggle_btn span:nth-child(2) {
-    top: 14px;
-  }
-  .toggle_btn span:nth-child(3) {
-    bottom: 4px;
-  }
-  .open .toggle_btn span {
-    background-color: #fff;
-  }
-  .open .toggle_btn span:nth-child(1) {
-    -webkit-transform: translateY(10px) rotate(-315deg);
-    transform: translateY(10px) rotate(-315deg);
-  }
-  .open .toggle_btn span:nth-child(2) {
-    opacity: 0;
-  }
-  .open .toggle_btn span:nth-child(3) {
-    -webkit-transform: translateY(-10px) rotate(315deg);
-    transform: translateY(-10px) rotate(315deg);
-  }
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 3;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 4px;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+.toggle_btn.open span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+  transform: translateY(10px) rotate(-315deg);
+}
+.toggle_btn.open span:nth-child(2) {
+  opacity: 0;
+}
+.toggle_btn.open span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+  transform: translateY(-10px) rotate(315deg);
+}
