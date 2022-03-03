@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -463,5 +464,58 @@ template {
 */
 [hidden] {
   display: none;
+}
+
+* {
+  font-family: '游ゴシック','ヒラギノ角ゴシック',sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  background-color: #66E5FC;
+}
+
+.inner {
+  padding: 80px 50px;
+  width: 50vw;
+  border: solid #66E5FC 3px;
+}
+
+.inner__ttl {
+  padding-bottom: 10px;
+  border-bottom: solid #66E5FC 3px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.inner__menu {
+  margin-top: 50px;
+}
+
+.inner .inner__list, .inner .inner__list--card, .inner .inner__list--contact, .inner .inner__list--youtube {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.inner .inner__list::before, .inner .inner__list--card::before, .inner .inner__list--contact::before, .inner .inner__list--youtube::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.inner .inner__list--card::before {
+  background-image: url("#");
+}
+
+.inner .inner__list--contact::before {
+  background-image: url("#");
+}
+
+.inner .inner__list--youtube::before {
+  background-image: url("#");
 }
 /*# sourceMappingURL=style.css.map */
