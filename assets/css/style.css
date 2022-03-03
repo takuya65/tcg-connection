@@ -477,8 +477,8 @@ template {
   right: 25px;
   width: 30px;
   height: 30px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .8s;
+  transition: all .8s;
   cursor: pointer;
   z-index: 3;
 }
@@ -491,8 +491,8 @@ template {
   height: 2px;
   background-color: #000;
   border-radius: 4px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .8s;
+  transition: all .8s;
 }
 
 .toggle_btn span:nth-child(1) {
@@ -541,17 +541,20 @@ template {
   right: -50vw;
   padding: 75px 50px;
   width: 50vw;
+  max-width: 600px;
   border: solid #1DFF00 3px;
   background: #fff;
   z-index: 1;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .inner.open {
   right: 0;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  opacity: 1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .inner__ttl {
@@ -564,37 +567,26 @@ template {
 }
 
 .inner__menu {
-  margin-top: 50px;
+  margin: 50px auto 0;
+  width: 470px;
 }
 
-.inner__list, .inner__list--card, .inner__list--contact, .inner__list--youtube, .inner__list--twitter {
-  margin: 0 auto 30px;
-  font-size: 30px;
-}
-
-.inner__list::before, .inner__list--card::before, .inner__list--contact::before, .inner__list--youtube::before, .inner__list--twitter::before {
-  content: "";
-  display: inline-block;
+.inner__img {
+  margin-right: 15px;
   width: 50px;
   height: 50px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
-.inner__list--card::before {
-  background-image: url("/assets/img/ico__card.png");
+.inner__link {
+  display: block;
+  margin: 0 auto 30px;
+  font-size: 30px;
+  line-height: normal;
 }
 
-.inner__list--contact::before {
-  background-image: url("/assets/img/ico__contact.png");
-}
-
-.inner__list--youtube::before {
-  background-image: url("/assets/img/ico__youtube.png");
-}
-
-.inner__list--twitter::before {
-  background-image: url("/assets/img/ico__twitter.png");
+.inner__link:hover {
+  color: #66E5FC;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 /*# sourceMappingURL=style.css.map */

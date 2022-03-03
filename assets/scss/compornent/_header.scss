@@ -17,13 +17,16 @@
     right: -50vw;
     padding: 75px 50px;
     width: 50vw;
+    max-width: 600px;
     border: solid $subColor 3px;
     background: #fff;
     z-index: 1;
-    transition: 0.6s;
+    opacity: 0;
+    transition: 0.8s;
     &.open {
         right: 0;
-        transition: 0.6s;
+        opacity: 1;
+        transition: 0.8s;
     }
     &__ttl {
         padding-bottom: 10px;
@@ -34,43 +37,22 @@
         font-size: 40px;
     }
     &__menu {
-        margin-top: 50px;
+        margin: 50px auto 0;
+        width: 470px;
     }
-    &__list {
+    &__img {
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    &__link {
+        display: block;
         margin: 0 auto 30px;
         font-size: 30px;
-        &::before {
-            content: "";
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-        }
-        &--card {
-            @extend .inner__list;
-            &::before {
-                background-image: url("/assets/img/ico__card.png");
-            }
-        }
-        &--contact {
-            @extend .inner__list;
-            &::before {
-                background-image: url("/assets/img/ico__contact.png");
-            }
-        }
-        &--youtube {
-            @extend .inner__list;
-            &::before {
-                background-image: url("/assets/img/ico__youtube.png");
-            }
-        }
-        &--twitter {
-            @extend .inner__list;
-            &::before {
-                background-image: url("/assets/img/ico__twitter.png");
-            }
+        line-height: normal;
+        &:hover {
+            color: $mainColor;
+            transition: 0.6s;
         }
     }
 }
