@@ -2,3 +2,27 @@
 main {
     padding-top: 150px;
 }
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.sec {
+    margin-top: 80px;
+    text-align: center;
+    &__ttl {
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: solid 3px $mainColor;
+        font-family: "Palatino";
+        font-size: 40px;
+    }
+    &__txt {
+        margin-top: 30px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
