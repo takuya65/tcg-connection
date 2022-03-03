@@ -16,13 +16,12 @@ main {
         display: inline-block;
         padding-bottom: 5px;
         border-bottom: solid 3px $mainColor;
-        font-family: "Palatino";
+        font-family: $designFont;
         font-size: 40px;
     }
     &__txt {
         margin-top: 30px;
         text-align: justify;
-        font-size: 20px;
         line-height: 1.5;
     }
 }
