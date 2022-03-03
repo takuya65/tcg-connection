@@ -1,0 +1,24 @@
+.fv {
+    width: 100vw;
+    height: calc(100vh - 150px);
+    background-image: url(/assets/img/fv/img__fv1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    &__wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 800px;
+    }
+    &__ttl {
+        font-family: "Palatino";
+        font-size: 60px;
+    }
+    &__txt {
+        margin-top: 40px;
+        font-family: "Palatino";
+        font-size: 40px;
+        line-height: 1.5;
+    }
+}
