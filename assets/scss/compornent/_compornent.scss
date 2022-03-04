@@ -1,16 +1,22 @@
 //headerの回り込み防止
 main {
     padding-top: 150px;
+    @include sp {
+        padding-top: 120px;
+    }
 }
 
 .container {
     margin: 0 auto;
     width: 100%;
     max-width: 1080px;
+    @include sp {
+        padding: 0 20px;
+    }
 }
 
 .sec {
-    margin-top: 80px;
+    margin-top: 50px;
     text-align: center;
     &__ttl {
         display: inline-block;
@@ -18,10 +24,24 @@ main {
         border-bottom: solid 3px $mainColor;
         font-family: $designFont;
         font-size: 40px;
+        @include sp {
+            font-size: 26px;
+        }
     }
     &__txt {
         margin-top: 30px;
         text-align: justify;
         line-height: 1.5;
+        @include sp {
+            margin: 30px 20px 0;
+            font-size: 20px;
+        }
+    }
+}
+
+.sp-on {
+    display: none;
+    @include sp {
+        display: block;
     }
 }

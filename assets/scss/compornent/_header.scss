@@ -4,8 +4,14 @@
     height: 150px;
     background-color: $mainColor;
     z-index: 10000;
+    @include sp {
+        height: 120px;
+    }
     &__ttl {
         margin: 25px auto 25px 25px;
+        @include sp {
+            margin: 10px auto 10px 10px;
+        }
     }
     &__link {
         display: block;
@@ -21,39 +27,70 @@
     right: -50vw;
     padding: 75px 50px;
     width: 50vw;
+    height: 100vh;
     max-width: 600px;
     border: solid $subColor 3px;
+    text-align: center;
     background: #fff;
-    z-index: 1;
+    z-index: 3;
     opacity: 0;
     transition: 0.8s;
+    @include sp {
+        padding: 40px 30px;
+        width: 100vw;
+        height: 100vh;
+    }
     &.open {
         right: 0;
         opacity: 1;
         transition: 0.8s;
     }
+    &__sec {
+        margin-top: 80px;
+        @include sp {
+            margin-top:40px;
+        }
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
     &__ttl {
+        display: inline-block;
         padding-bottom: 10px;
         margin: 0 auto;
-        max-width: 240px;
         border-bottom: solid $mainColor 3px;
         text-align: center;
         font-size: 40px;
+        @include sp {
+            font-size: 30px;
+        }
     }
     &__menu {
         margin: 50px auto 0;
         width: 470px;
+        text-align: left;
+        @include sp {
+            margin-top: 30px;
+        }
     }
     &__img {
         margin-right: 15px;
         width: 50px;
         height: 50px;
+        @include sp {
+            width: 30px;
+            height: 30px;
+        }
     }
     &__link {
         display: block;
         margin: 0 auto 30px;
         font-size: 30px;
         line-height: normal;
+        @include sp {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
         &:hover {
             color: $mainColor;
             transition: 0.6s;
