@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-      <h1 class="header__ttl"><img class="header__logo" src="#" alt="TCG CONNECTION"></h1>
+      <h1 class="header__ttl"><a class="header__link" href="index.html"><img class="header__logo" src="#" alt="TCG CONNECTION"></a></h1>
       <div class="toggle_btn">
         <span></span>
         <span></span>
@@ -28,7 +28,7 @@
             <li class="inner__list"><a class="inner__link" href="#"><img class="inner__img" src="/assets/img/header/ico__card.png">バトルスピリッツ</a></li>
           </ul>
         </section>
-        <section>
+        <section class="inner__sec">
           <h2 class="inner__ttl">その他</h2>
           <ul class="inner__menu">
             <li class="inner__list"><a class="inner__link" href="#"><img class="inner__img" src="/assets/img/header/ico__contact.png">問い合わせフォーム</a></li>
@@ -38,89 +38,94 @@
         </section>
       </div>
     </nav>
+    <div id="mask"></div>
     </header>
     <main class="page">
         <div class="fv">
             <section class="fv__wrap">
-              <h2 class="fv__ttl">TCG CONNECTION</h2>
+              <h2 class="fv__ttl">TCG <br class="sp-on">CONNECTION</h2>
               <p class="fv__txt">ポケモンカードゲーム</p>
             </section>
-        </div>
-        <ul class="breadcrumbs__menu">
+            <p class="scroll__txt">SCROLL</p>
+            <figure class="scroll__icon"><img src="/assets/img/fv/img__scroll.png" alt="スクロール"></figure>
+          </div>
+        <ul class="breadcrumbs">
             <li class="breadcrumbs__list">
                 <a class="breadcrumbs__link" href="/index.html">TOP</a>
             </li>
             <li class="breadcrumbs__list">&nbsp;>&nbsp;ポケモンカードゲーム</li>
         </ul>
-        <section class="sec container">
-            <h2 class="sec__ttl">記事一覧</h2>
-            <ul class="column__menu">
-                <li class="column__list">
-                    <a class="column__link" href="/single/single.html">
-                        <dl>
-                            <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
-                            <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="column__list">
-                    <a class="column__link" href="/single/single.html">
-                        <dl>
-                            <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
-                            <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="column__list">
-                    <a class="column__link" href="/single/single.html">
-                        <dl>
-                            <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
-                            <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="column__list">
-                    <a class="column__link" href="/single/single.html">
-                        <dl>
-                            <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
-                            <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="column__list">
-                    <a class="column__link" href="/single/single.html">
-                        <dl>
-                            <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
-                            <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="column__list">
-                    <a class="column__link" href="/single/single.html">
-                        <dl>
-                            <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
-                            <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="column__list">
-                    <a class="column__link" href="/single/single.html">
-                        <dl>
-                            <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
-                            <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="column__list">
-                    <a class="column__link" href="/single/single.html">
-                        <dl>
-                            <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
-                            <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
-                        </dl>
-                    </a>
-                </li>                
-            </ul>
-        </section>
+        <div class="container">
+            <article class="box">
+                <h2 class="sec__ttl">記事一覧</h2>
+                <ul class="column__menu">
+                    <li class="column__list">
+                        <a class="column__link" href="/single/single.html">
+                            <dl>
+                                <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
+                                <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="column__list">
+                        <a class="column__link" href="/single/single.html">
+                            <dl>
+                                <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
+                                <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="column__list">
+                        <a class="column__link" href="/single/single.html">
+                            <dl>
+                                <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
+                                <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="column__list">
+                        <a class="column__link" href="/single/single.html">
+                            <dl>
+                                <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
+                                <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="column__list">
+                        <a class="column__link" href="/single/single.html">
+                            <dl>
+                                <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
+                                <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="column__list">
+                        <a class="column__link" href="/single/single.html">
+                            <dl>
+                                <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
+                                <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="column__list">
+                        <a class="column__link" href="/single/single.html">
+                            <dl>
+                                <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
+                                <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
+                            </dl>
+                        </a>
+                    </li>
+                    <li class="column__list">
+                        <a class="column__link" href="/single/single.html">
+                            <dl>
+                                <dt class="column__thumbnail"><span class="column__category">イベント</span><img class="column__img" src="#" alt="投稿記事"></dt>
+                                <dd class="sec__txt">タイトルが入ります。タイトルが入ります。</dd>
+                            </dl>
+                        </a>
+                    </li>                
+                </ul>
+            </article>
+        </div>
     </main>
     <footer class="footer">
     <p class="copyright">&copy;2020  TCG CONNECTION</p>
