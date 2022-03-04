@@ -4,5 +4,9 @@
         width: 700px;
         height: 450px;
         background-color: #808080;
+        @include sp {
+            width: 90%;
+            height: 200px;
+        }
     }
 }

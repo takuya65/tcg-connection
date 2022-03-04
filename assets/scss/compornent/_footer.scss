@@ -6,6 +6,9 @@
     width: 100vw;
     height: 100px;
     background: $mainColor;
+    @include sp {
+        margin-top: 50px;
+    }
 }
 .copyright {
     color: #fff;
