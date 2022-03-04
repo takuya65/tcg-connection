@@ -1,25 +1,55 @@
 .fv {
+    position: relative;
     width: 100vw;
     height: calc(100vh - 150px);
     background-image: url(/assets/img/fv/img__fv1.png);
         background-repeat: no-repeat;
         background-position: center;
+        @include sp {
+            height: calc(100vh - 120px);
+        }
     &__wrap {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 800px;
+        @include sp {
+            max-width: 300px;
+        }
     }
     &__ttl {
         font-family: $designFont;
         font-size: 60px;
         font-weight: bold;
+        @include sp {
+            font-size: 40px;
+        }
     }
     &__txt {
         margin-top: 40px;
         font-family: $designFont;
         font-size: 40px;
         line-height: 1.5;
+        @include sp {
+            font-size: 20px;
+        }
+    }
+}
+
+.scroll {
+    &__txt {
+        padding-top: 80vh;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+        @include sp {
+            padding-top: 70vh;
+        }
+    }
+    &__icon {
+        margin: 5px auto 0;
+        width: 30px;
+        height: 30px;
     }
 }
