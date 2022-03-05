@@ -38,6 +38,7 @@
     @include sp {
         padding: 40px 30px;
         width: 100vw;
+        max-width: initial;
         height: 100vh;
     }
     &.open {
@@ -67,7 +68,7 @@
     }
     &__menu {
         margin: 50px auto 0;
-        width: 470px;
+        max-width: 470px;
         text-align: left;
         @include sp {
             margin-top: 30px;
