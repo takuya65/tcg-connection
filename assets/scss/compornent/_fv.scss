@@ -31,14 +31,19 @@
         font-family: $designFont;
         font-size: 40px;
         line-height: 1.5;
+        @include sp {
+            font-size: 26px;
+        }
     }
 }
-
 .scroll {
     position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
+        @include sp {
+            bottom: 10vh;
+        }
     &__txt {
         text-align: center;
         font-size: 16px;

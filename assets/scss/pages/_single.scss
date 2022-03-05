@@ -1,4 +1,12 @@
 .single {
+    .fv {
+        &__ttl {
+            font-size: 40px;
+            @include sp {
+                font-size: 30px;
+            }
+        }
+    }
     &__photo {
         margin: 80px auto 0;
         max-width: 700px;

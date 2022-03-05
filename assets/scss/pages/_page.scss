@@ -1,22 +1,15 @@
-.breadcrumbs {
-    margin: 30px 0 0 30px;
-    @include sp {
-        margin: 10px 0 0 10px;
-    }
-    &__list {
-        display: inline-block;
-        font-size: 20px;
-    }
-    &__link {
-        color: $mainColor;
-    }
-}
-
 .box {
     margin-top: 50px;
     text-align: center;
+    .sec {
+        &__ttl {
+            font-size: 30px;
+            @include sp {
+                font-size: 26px;
+            }
+        }
+    }
 }
-
 .column {
     display: flex;
     flex-wrap: wrap;
@@ -28,10 +21,16 @@
         width: 100%;
     }
     &__list {
-        margin-top: 100px;
+        margin-top: 50px;
         width: 300px;
+        &:nth-child(1.2) {
+            margin-top: 0;
+        }
         @include sp {
-            margin: 100px auto 0;
+            margin: 50px auto 0;
+            &:nth-child(2) {
+                margin-top: 50px;
+            }
         }
     }
     &__link {
