@@ -1,4 +1,21 @@
 #top {
+    .start {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+        background-color: #fff;
+        &__txt {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2000;
+        }
+    }
     .area {
         padding: 80px;
         margin-top: 80px;
@@ -51,4 +68,27 @@
             text-align: justify;
         }
     }
+    .fade-in {
+        opacity: 0;
+        transition-duration: 500ms;
+        transition-property: opacity, transform;
+    }
+    .fade-in-up {
+        transform: translate(0, 50px);
+    }
+    .fade-in-down {
+        transform: translate(0, -50px);
+    }
+      
+    .fade-in-left {
+        transform: translate(-50px, 0);
+    }
+      
+    .fade-in-right {
+        transform: translate(50px, 0);
+    }
+    .scroll-in {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
 }
